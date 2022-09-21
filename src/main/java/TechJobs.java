@@ -128,7 +128,8 @@ public class TechJobs {
                 for (String column : job.keySet()) {
                     System.out.println(column + ": " + job.get(column));
                 }
-                System.out.println(jobDelimiter);
+                System.out.println(jobDelimiter +
+                        (someJobs.indexOf(job) < someJobs.size() - 1 ? '\n' : ""));
             }
         } else {
             System.out.print("No Results");
